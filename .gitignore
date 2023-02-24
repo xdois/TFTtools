@@ -3,6 +3,7 @@ secretkey.py
 *.txt
 *.tar
 *.json
+static/
 # Created by https://www.toptal.com/developers/gitignore/api/django,data,python,macos,visualstudiocode,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,data,python,macos,visualstudiocode,windows
 
