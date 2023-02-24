@@ -105,7 +105,7 @@ def get_match(csv_file):
     for idx,row in df.iterrows():
         print('index:',idx)
         puuid = row['puuid']
-        #https://asia.api.riotgames.com/tft/match/v1/matches/by-puuid/U9-ddvLi_DDD-2pq5yRm5VpA7Gq-khOEsissRs8DWSEWEsWOVWpL35SfDlzumDP1Q7TlIpMl9YQcCA/ids?start=0&count=20&api_key=RGAPI-5ca06156-7d89-48f2-8735-e100dc0993d2
+        
         URL_MATCH_LIST = 'https://asia.api.riotgames.com/tft/match/v1/matches/by-puuid/' + puuid +'/ids?start=0&count=20&api_key=' + apikey.API_KEY
         response, content = h.request(URL_MATCH_LIST, 'GET')
         result = json.loads(content.decode('utf-8'))
